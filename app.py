@@ -12,7 +12,7 @@ CORS(app, resources={r"/chat": {"origins": [
 ]}})
 
 # Default fallback API key and model
-DEFAULT_API_KEY = "AIzaSyBWpPkPeCAqX_ua_AOgHiDUmuBmhvkvbLk"
+DEFAULT_API_KEY = "AIzaSyDyn8p6mIfjX5LxSTRUEhZnLsncYT68Fyw"
 DEFAULT_MODEL = "models/gemini-1.5-flash-latest"
 
 # Store last 5 chats as (user_message, ai_reply)
