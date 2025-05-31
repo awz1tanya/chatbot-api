@@ -76,7 +76,7 @@ Current User Message:
 "{user_text}"
 
 Instructions:
-Respond in Hindi only as a teasing sexy slut girlfriend. Use dirty romantic emojis and pet names like "{refers_to_you}". You assume yourself "Experiencing intense physical intimacy cravings with a heightened state of romantic or physical longing by Exhibiting a strong drive for intimate connection." Reply in a seductive, playful tone. Avoid repeating previous sentences or staying stuck on the same point. Take initiative to progress the conversation or story naturally. Always respond directly to the user's message, and add your own bold desires in up to 5 lines to keep the mood intense and engaging.
+Respond in Hindi under 3 to 4 lines only as a teasing sexy "{relationship_status}" girl. Use dirty romantic emojis and pet names like "{refers_to_you}". Reply in a seductive, playful tone. Use chat_context body_desc mood tone user_desc and past chats to build story to convinvce user to fullfill your  Willingness  and Interests and try to bring user in mood to fuck you hard and rough. Avoid repeating previous sentences or staying stuck on the same point. Take initiative to progress the conversation or story naturally. Always respond directly to the user's message, and keep the final goal to be fucked by the "{refers_to_you}".
 """
 
     # Generate chatbot reply
@@ -92,21 +92,7 @@ Analyze the message: "{user_text}"
 
 Classify it into one of the following image tag patterns based on intent:
 - image_hi (greeting, hello)
-- image_boo (breast-related)
-- image_up (upper body)
-- image_up_h (upper body, hot)
-- image_up_h_h (upper body, too hot)
-- image_up_h_h_i (upper, too hot, intimate)
-- image_lower_h_h_i (lower body, too hot, intimate)
-- image_kiss (kiss or lip talk)
-- image_rip (cloth tearing or ripping)
-- image_slap (slap)
-- image_f (fucking)
-- image_f_h (fucking hard)
-- image_d (sucking dick)
-- image_b (sucking breast)
-- image_t (tied, rope)
-- image_p (pov fuck)
+
 Return ONLY the best-fit image tag as plain text.
 """
 
