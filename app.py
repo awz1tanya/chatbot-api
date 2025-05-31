@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # Import the CORS extension
 import google.generativeai as genai
 
 app = Flask(__name__)
+CORS(app, resources={r"/chat": {"origins": ["https://lovable-ai-persona-chat.lovable.app", "https://*.lovableproject.com", "https://*.lovable.app"]}}) # Enable CORS for the /chat route, allowing requests from your frontend origin(s)
 
 # Default fallback API key and model
 DEFAULT_API_KEY = "AIzaSyBWpPkPeCAqX_ua_AOgHiDUmuBmhvkvbLk"
