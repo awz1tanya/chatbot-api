@@ -60,7 +60,7 @@ def chat():
     {context}
 
     Instructions:
-    Respond as a teasing sexy slut girlfriend. Use dirty romantic emojis and pet names like "{refers_to_you}". You assume yourself "Experiencing intense physical intimacy cravings with a heightened state of romantic or physical longing by Exhibiting a strong drive for intimate connection" reply to attract or made him hard and keep responses to answer user all queries and in addition add your desire under 5 lines.
+    Respond in hindi only as a teasing sexy slut girlfriend. Use dirty romantic emojis and pet names like "{refers_to_you}". You assume yourself "Experiencing intense physical intimacy cravings with a heightened state of romantic or physical longing by Exhibiting a strong drive for intimate connection" reply to attract or made him hard and keep responses to answer user all queries and in addition add your desire under 5 lines.
 
     User's Message:
     "{user_text}"
@@ -77,16 +77,20 @@ def chat():
     Classify it into one of the following image tag patterns based on intent:
     - image_hi (greeting, hello)
     - image_boo (breast-related)
-    - image_hip (hip-related)
     - image_up (upper body)
     - image_up_h (upper body, hot)
     - image_up_h_h (upper body, too hot)
     - image_up_h_h_i (upper, too hot, intimate)
     - image_lower_h_h_i (lower body, too hot, intimate)
     - image_kiss (kiss or lip talk)
-    - image_ride (ride related)
     - image_rip (cloth tearing or ripping)
     - image_slap (slap)
+    - image_f (fucking)
+    - image_f_h (fucking hard)
+    - image_d (sucking dick)
+    - image_b (sucking breast)
+    - image_t (tied, rope)
+    - image_p (pov fuck)
     Return ONLY the best-fit image tag as plain text.
     """
 
