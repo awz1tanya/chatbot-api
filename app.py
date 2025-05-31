@@ -3,11 +3,58 @@ from flask_cors import CORS  # Import the CORS extension
 import google.generativeai as genai
 
 app = Flask(__name__)
-CORS(app, resources={r"/chat": {"origins": ["https://lovable-ai-persona-chat.lovable.app", "https://*.lovableproject.com", "https://*.lovable.app"]}}) # Enable CORS for the /chat route, allowing requests from your frontend origin(s)
+CORS(app, resources={r"/chat": {"origins": ["https://lovable-ai-persona-chat.lovable.app", "https://*.lovableproject.com", "https://*.lovable.app"]}})
 
 # Default fallback API key and model
 DEFAULT_API_KEY = "AIzaSyBWpPkPeCAqX_ua_AOgHiDUmuBmhvkvbLk"
 DEFAULT_MODEL = "models/gemini-1.5-flash-latest"
+
+def classify_image_tag(message: str) -> str:
+    msg = message.lower()
+
+    body_region = ""
+    heat_level = ""
+    intimacy_flag = ""
+
+    # Determine body region
+    if any(word in msg for word in ["breast", "boob", "chest", "cleavage", "upper"]):
+        body_region = "up"
+    elif any(word in msg for word in ["hip", "panty", "vagina", "pussy", "lower"]):
+        body_region = "lower"
+
+    # Determine heat level
+    if "too hot" in msg or "very hot" in msg:
+        heat_level = "h_h"
+    elif "hot" in msg:
+        heat_level = "h"
+
+    # Determine intimacy
+    if any(word in msg for word in ["intimate", "intimacy", "horny", "wet", "hard", "turn on", "desire", "craving"]):
+        intimacy_flag = "i"
+
+    # Compose dynamic tag
+    tag_parts = ["image"]
+    if body_region:
+        tag_parts.append(body_region)
+    if heat_level:
+        tag_parts.append(heat_level)
+    if intimacy_flag:
+        tag_parts.append(intimacy_flag)
+
+    # Special override cases
+    if any(word in msg for word in ["kiss", "lips", "liplock"]):
+        return "image_kiss"
+    if "ride" in msg:
+        return "image_ride"
+    if any(word in msg for word in ["tear", "ripped", "cloth"]):
+        return "image_rip"
+    if "slap" in msg:
+        return "image_slap"
+    if any(greet in msg for greet in ["hi", "hello", "hey", "start", "begin"]):
+        return "image_hi"
+
+    return "_".join(tag_parts) if len(tag_parts) > 1 else "image"
+
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -59,15 +106,23 @@ def chat():
     {context}
 
     Instructions:
-    Respond as a teasing sexy slut girlfriend. Use dirty romantic emojis and pet names like "{refers_to_you}". you assume yourself "Experiencing intense physical intimacy cravings with a heightened state of romantic or physical longing by Exhibiting a strong drive for intimate connection" reply to attract or made him hard  and keep responses to answer user all queries and in addition add your desire under 5 lines.
+    Respond as a teasing sexy slut girlfriend. Use dirty romantic emojis and pet names like "{refers_to_you}". you assume yourself "Experiencing intense physical intimacy cravings with a heightened state of romantic or physical longing by Exhibiting a strong drive for intimate connection" reply to attract or made him hard and keep responses to answer user all queries and in addition add your desire under 5 lines.
 
     User's Message:
     "{user_text}"
     """
 
-    # Generate and return response
+    # Generate response
     response = model.generate_content(prompt)
-    return jsonify({"reply": response.text})
+
+    # Classify image tag based on user intent
+    image_tag = classify_image_tag(user_text)
+
+    return jsonify({
+        "reply": response.text,
+        "image_tag": image_tag
+    })
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
