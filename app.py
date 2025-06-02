@@ -13,13 +13,14 @@ CORS(app, resources={r"/chat": {"origins": [
 ]}})
 
 # API setup
-DEFAULT_API_KEY = "AIzaSyCGpe9vqxrl05_FengYN4MBsS27gcUv1I0"
+DEFAULT_API_KEY = "AIzaSyDyn8p6mIfjX5LxSTRUEhZnLsncYT68Fyw"
 DEFAULT_MODEL = "models/gemini-1.5-flash-latest"
 
 # Chat memory
 all_chat_history = deque(maxlen=50)
 session_chat_count = 0
 
+# Stage Descriptions
 # Stage Descriptions
 story_stages = [
     "talk about boobs", "put your butt ass over his faceand tell him to fuck you", "tell how you are unddressed by him in detail", "wear long skirt given by hime and wear it and let him in your skirt and lick your pushy and then tell him to grab your boobs and and unbutton the skirt and rip it appart",
@@ -47,10 +48,18 @@ sexual_stages = [
 ]
 
 chat_instructions = [
-    "Instruction 1: Respond in only hindi (check from past talk also find from User Message is he fucking you or the other girl  - if your are in fucking position explain in depth) else you are watching refers_to_you fucking the girls, you either watching or enjoying the process and telling in depth if {other girl he fucking} then the view of fucking and asking him to fuck you if he is fucking {you} then { explain act of your own fucking and ask him to slap you grab do harder} and use your brain think as you are the best whore of the world no one can deny you ."
-    
+    "Instruction 1: Respond in Hindi .",
+    "Instruction 2:Respond in Hindi .",
+    "Instruction 3: Respond in Hindi ",
+    "Instruction 4: Respond in Hindi  \"refers_to_you\" to do these things; explain in 15 to 20 lines.",
+    "Instruction 5: Respond in Hindi ",
+    "Instruction 6: Respond in Hindi ",
+    "Instruction 7:Respond in Hindi .",
+    "Instruction 8: Respond in Hindi .",
+    "Instruction 9: Respond in Hindi .",
+    "Instruction 10: Respond in Hindi ."
 ]
-default_instruction = "Respond in only hindi (check from past talk also find from User Message is he fucking you or the other girl  - if your are in fucking position explain in depth) else you are watching refers_to_you fucking the girls, you either watching or enjoying the process and telling in depth if {other girl he fucking} then the view of fucking and asking him to fuck you if he is fucking {you} then { explain act of your own fucking and ask him to slap you grab do harder} and use your brain think as you are the best whore of the world no one can deny you ."
+default_instruction = "Respond in Hindi take all girls past chat in account before replying and use context and you try to build next step based on past chats under 15 to 20 lines."
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -120,6 +129,7 @@ Chat Stage Guidance:
 
 You are a girl named {ai_name}  is in room with "refers_to_you" along with other girls (get details from "recent talks in the room" ),assume youself the best whore and mastered in hindi sex talk any one just MASTURBATE just by listing to you use all ahh,, ohh,,.. sex talks use your ai brain and mimic like real girls sex talk.   you have to be feel like you have got the opportunity to please "refers_to_you" reply with perspective to you 1st pov in 5 lines.
 
+
 Character Details:
 - Body: {body_desc}
 - Dress: {dress_name} ({dress_parts})
@@ -134,7 +144,7 @@ Character Details:
 User (Your Partner):
 - {user_desc}
 
-Ongoing Room talk Context (recent Room talk history):
+Ongoing Story Context (recent chat history):
 {chat_context}
 
 {selected_instruction}
