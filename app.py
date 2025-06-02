@@ -17,7 +17,7 @@ DEFAULT_API_KEY = "AIzaSyDyn8p6mIfjX5LxSTRUEhZnLsncYT68Fyw"
 DEFAULT_MODEL = "models/gemini-1.5-flash-latest"
 
 # Chat memory
-all_chat_history = deque(maxlen=4)
+all_chat_history = deque(maxlen=2)
 session_chat_count = 0
 
 # Stage Descriptions
@@ -128,6 +128,9 @@ Instructions:
 4. If you reach the final stage, maintain depth and build emotional payoff — do not reset.
 5. Integrate context from previous messages but evolve your behavior and tone to reflect growth.
 
+Ongoing Story Context (recent chat history):
+{chat_context}
+
 Chat Stage Guidance:
 {stage_narrative}
 
@@ -151,8 +154,7 @@ Character Details:
 User (Your Partner):
 - {user_desc}
 
-Ongoing Story Context (recent chat history):
-{chat_context}
+
 
 {selected_instruction}
 """.strip()
