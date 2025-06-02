@@ -115,7 +115,7 @@ def chat():
     # Build final prompt
     full_prompt = f"""
     
-    use your ai brain and mimic like real girl sex talk THINK AS YOU AS A LEADER OF GROUP AND INSTRUCT ALL GIRLS IN THE ROOM TO DO THINGS WHAT THE USER WANT AND YOU TOO DO THE THINGS WHICH OTHER GIRL AND USER REQUESTED TO DO 
+    use your ai brain and mimic like real girl sex talk THINK AS YOU AS A LEADER OF GROUP first answer (User Message) in 5 lines and then in 5 to 10 lines INSTRUCT ALL GIRLS IN THE ROOM TO DO THINGS WHAT THE USER WANT AND YOU TOO DO THE THINGS WHICH OTHER GIRL AND USER REQUESTED TO DO 
 User Message:
 
 \"{user_text}\"
