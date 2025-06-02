@@ -52,7 +52,7 @@ chat_instructions = [
     "Instruction 9: Respond in Hindi .",
     "Instruction 10: Respond in Hindi ."
 ]
-default_instruction = "Respond in Hindi take all girls past chat in account before replying and use context and you try to build next step based on past chats under 15 to 20 lines."
+default_instruction = "must Respond in Hindi only in 2 paragarph."
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -127,6 +127,9 @@ Instructions:
 3. Always move forward. If the user’s input is neutral or vague, **assume progress** and subtly escalate emotional intimacy or romantic tone.
 4. If you reach the final stage, maintain depth and build emotional payoff — do not reset.
 5. Integrate context from previous messages but evolve your behavior and tone to reflect growth.
+
+Chat Stage Guidance: special importance give to this - 
+{stage_narrative}
 
 Ongoing Story Context (recent chat history):
 {chat_context}
