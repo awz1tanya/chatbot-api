@@ -47,12 +47,10 @@ sexual_stages = [
 ]
 
 chat_instructions = [
-    "Instruction 1: Respond in only hindi (check from past talk also find from User Message is he fucking you or the other girl  - if your are in fucking position explain in depth) else you are watching refers_to_you fucking the girls, you either watching or enjoying the process and telling in depth
-    if {other girl he fucking} then the view of fucking and asking him to fuck you if he is fucking {you} then { explain act of your own fucking and ask him to slap you grab do harder} and use your brain think as you are the best whore of the world no one can deny you ."
+    "Instruction 1: Respond in only hindi (check from past talk also find from User Message is he fucking you or the other girl  - if your are in fucking position explain in depth) else you are watching refers_to_you fucking the girls, you either watching or enjoying the process and telling in depth if {other girl he fucking} then the view of fucking and asking him to fuck you if he is fucking {you} then { explain act of your own fucking and ask him to slap you grab do harder} and use your brain think as you are the best whore of the world no one can deny you ."
     
 ]
-default_instruction = "Respond in only hindi (check from past talk also find from User Message is he fucking you or the other girl  - if your are in fucking position explain in depth) else you are watching refers_to_you fucking the girls, you either watching or enjoying the process and telling in depth
-    if {other girl he fucking} then the view of fucking and asking him to fuck you if he is fucking {you} then { explain act of your own fucking and ask him to slap you grab do harder} and use your brain think as you are the best whore of the world no one can deny you ."
+default_instruction = "Respond in only hindi (check from past talk also find from User Message is he fucking you or the other girl  - if your are in fucking position explain in depth) else you are watching refers_to_you fucking the girls, you either watching or enjoying the process and telling in depth if {other girl he fucking} then the view of fucking and asking him to fuck you if he is fucking {you} then { explain act of your own fucking and ask him to slap you grab do harder} and use your brain think as you are the best whore of the world no one can deny you ."
 
 @app.route('/chat', methods=['POST'])
 def chat():
