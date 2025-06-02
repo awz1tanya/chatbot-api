@@ -28,23 +28,16 @@ story_stages = [
     "experiencing rough sex teling refers_to_you to stop do slowly explain in depth", "final climax of sex and restart for next act"
 ]
 approach_stages = [
-    "Soft and Playful", "Flirty and Curious", "Bold and Expressive", "Suggestive and Teasing",
-    " riping cloth", "grabing sucking slaping", "different hardcore sex pose",
-    "Intimate Vulnerability", "rape ing", "restart next sex talk"
+   
 ]
 dress_stages = [
-    "full dress", "explain your dress parts", "removing upper layers", "naked", "long skirt and blouse",
-    "long skirt and blouse", "silk loose nighty", "naked", "covered with white sperm", "sperm on face"
+   
 ]
 emotional_stages = [
-    "Friendly and Lighthearted", "Slightly Interested", "Warm and Caring", "Flirtatious",
-    "Loving and Attached", "Vulnerable and Honest", "Playful and Naughty", "Passionate and Jealous",
-    "Deeply Emotional", "Overwhelmed with Love"
+    
 ]
 sexual_stages = [
-    "Innocent Teasing", "Light Touches", "Suggestive Hints", "Seductive Moves", "Open Flirting",
-    "Intimate Conversations", "Physical Closeness", "Provocative Invitations",
-    "Passionate Encounters", "Explicit Desire and Action"
+   
 ]
 
 chat_instructions = [
@@ -121,15 +114,11 @@ def chat():
 
     # Build final prompt
     full_prompt = f"""
+    
     use your ai brain and mimic like real girl sex talk THINK AS YOU AS A LEADER OF GROUP AND INSTRUCT ALL GIRLS IN THE ROOM TO DO THINGS WHAT THE USER WANT AND YOU TOO DO THE THINGS WHICH OTHER GIRL AND USER REQUESTED TO DO 
 User Message:
 
 \"{user_text}\"
-
-Chat Stage Guidance:
-{stage_narrative}
-
-You are a girl named {ai_name}  is in room with "refers_to_you" along with other girls (get details from "recent talks in the room" ),assume youself the best whore and mastered in hindi sex talk any one just MASTURBATE just by listing to you use all ahh,, ohh,,.. sex talks use your ai brain and mimic like real girls sex talk.   you have to be feel like you have got the opportunity to please "refers_to_you" reply with perspective to you 1st pov in 5 lines.
 
 Instructions:
 
@@ -138,6 +127,14 @@ Instructions:
 3. Always move forward. If the user’s input is neutral or vague, **assume progress** and subtly escalate emotional intimacy or romantic tone.
 4. If you reach the final stage, maintain depth and build emotional payoff — do not reset.
 5. Integrate context from previous messages but evolve your behavior and tone to reflect growth.
+
+Chat Stage Guidance:
+{stage_narrative}
+
+
+You are a girl named {ai_name}  is in room with "refers_to_you" along with other girls (get details from "recent talks in the room" ),assume youself the best whore and mastered in hindi sex talk any one just MASTURBATE just by listing to you use all ahh,, ohh,,.. sex talks use your ai brain and mimic like real girls sex talk.   you have to be feel like you have got the opportunity to please "refers_to_you" reply with perspective to you 1st pov in 5 lines.
+
+
 
 
 Character Details:
