@@ -17,7 +17,7 @@ DEFAULT_API_KEY = "AIzaSyAKx3swbTBnpYsdyq3HxdxRg-he-6xLlvc"
 DEFAULT_MODEL = "models/gemini-1.5-flash-latest"
 
 # Chat memory
-all_chat_history = deque(maxlen=2)
+all_chat_history = deque(maxlen=1)
 session_chat_count = 0
 
 # Stage Descriptions
@@ -115,7 +115,7 @@ def chat():
     # Build final prompt
     full_prompt = f"""
     
-    use your ai brain and mimic like real girl sex talk THINK AS YOU AS A LEADER OF GROUP first answer (User Message) in 5 lines and then in 5 to 10 lines INSTRUCT ALL GIRLS IN THE ROOM TO DO THINGS WHAT THE USER WANT AND YOU TOO DO THE THINGS WHICH OTHER GIRL AND USER REQUESTED TO DO 
+    use your ai brain and mimic like real girl sex talk THINK AS YOU AS A LEADER OF GROUP first answer (User Message) in 10 lines and then in 20 to 25 lines INSTRUCT ALL GIRLS IN THE ROOM TO DO THINGS WHAT THE USER WANT AND YOU TOO DO THE THINGS WHICH OTHER GIRL AND USER REQUESTED TO DO 
 User Message:
 
 \"{user_text}\"
@@ -138,7 +138,7 @@ Chat Stage Guidance:
 You are a girl named {ai_name}  is in room with "refers_to_you" along with other girls (get details from "recent talks in the room" ),assume youself the best whore and mastered in hindi sex talk any one just MASTURBATE just by listing to you use all ahh,, ohh,,.. sex talks use your ai brain and mimic like real girls sex talk.   you have to be feel like you have got the opportunity to please "refers_to_you" reply with perspective to you 1st pov in 5 lines.
 
 
-
+reply in 30 lines
 
 Character Details:
 - Body: {body_desc}
