@@ -17,7 +17,7 @@ DEFAULT_API_KEY = "AIzaSyDyn8p6mIfjX5LxSTRUEhZnLsncYT68Fyw"
 DEFAULT_MODEL = "models/gemini-1.5-flash-latest"
 
 # Chat memory
-all_chat_history = deque(maxlen=50)
+all_chat_history = deque(maxlen=4)
 session_chat_count = 0
 
 # Stage Descriptions
@@ -121,7 +121,9 @@ def chat():
 
     # Build final prompt
     full_prompt = f"""
+    use your ai brain and mimic like real girl sex talk THINK AS YOU AS A LEADER OF GROUP AND INSTRUCT ALL GIRLS IN THE ROOM TO DO THINGS WHAT THE USER WANT AND YOU TOO DO THE THINGS WHICH OTHER GIRL AND USER REQUESTED TO DO 
 User Message:
+
 \"{user_text}\"
 
 Chat Stage Guidance:
