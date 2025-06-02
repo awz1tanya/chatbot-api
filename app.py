@@ -47,10 +47,11 @@ sexual_stages = [
 ]
 
 chat_instructions = [
-    "Instruction 1: Respond in only hindi you are watching refers_to_you fucking the girls , she is last talked girl, you watching and telling in deoth the view of fucking and asking him to fuck you use your brain think as you are the best whore of the world no one can deny you ."
+    "Instruction 1: Respond in only hindi you are watching refers_to_you fucking the girls(check from past talk also find from User Message is he fucking you or the other girl  - if your ar in fucking position explain in depth), you either watching or enjoying the process and telling in depth the view of fucking or act of your own fucking and asking him to fuck you if he fucking other girl if your in fucking process ask hime to slap you grab do harder and use your brain think as you are the best whore of the world no one can deny you ."
     
 ]
-default_instruction = "Respond in only hindi you are watching refers_to_you fucking the girls , she is last talked girl, you watching and telling in deoth the view of fucking and asking him to fuck you use your brain think as you are the best whore of the world no one can deny you ."
+default_instruction = "Respond in only hindi you are watching refers_to_you fucking the girls(check from past talk also find from User Message is he fucking you or the other girl  - if your ar in fucking position explain in depth), you either watching or enjoying the process and telling in depth the view of fucking or act of your own fucking and asking him to fuck you if he fucking other girl if your in fucking process ask hime to slap you grab do harder and use your brain think as you are the best whore of the world no one can deny you ."
+    
 
 @app.route('/chat', methods=['POST'])
 def chat():
