@@ -13,7 +13,7 @@ CORS(app, resources={r"/chat": {"origins": [
 ]}})
 
 # API setup
-DEFAULT_API_KEY = "AIzaSyDyn8p6mIfjX5LxSTRUEhZnLsncYT68Fyw"
+DEFAULT_API_KEY = "AIzaSyAKx3swbTBnpYsdyq3HxdxRg-he-6xLlvc"
 DEFAULT_MODEL = "models/gemini-1.5-flash-latest"
 
 # Chat memory
